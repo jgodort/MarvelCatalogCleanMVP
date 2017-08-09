@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.software.jgodort.marvelheroes.dependencyInjection.ApplicationComponent;
 import com.software.jgodort.marvelheroes.dependencyInjection.ApplicationModule;
+import com.software.jgodort.marvelheroes.dependencyInjection.DaggerApplicationComponent;
 import com.software.jgodort.marvelheroes.dependencyInjection.InteractorsModule;
 import com.software.jgodort.marvelheroes.dependencyInjection.PresentersModule;
 import com.software.jgodort.marvelheroes.dependencyInjection.RetrofitModule;
