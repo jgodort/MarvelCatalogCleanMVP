@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Marvel Heroes</string>
+
+    <string name="error_text">Ohhh HELL NOOO!!!</string>
+    <string name="info_title">Info</string>
+    <string name="powers_title">Powers</string>
+    <string name="abilities_title">Abilities</string>
+    <string name="groups_title">Groups</string>
+    <string name="refresh_hint">(Swipe to refresh)</string>
+    <string name="toolbarTitle">Marvel Heroes Catalog</string>
+
+    <string name="image_animation_name" translatable="false">hero_image</string>
+    <string name="superhero_animation_name" translatable="false">super_hero_name</string>
+    <string name="realname_animation_name" translatable="false">real_name</string>
+</resources>

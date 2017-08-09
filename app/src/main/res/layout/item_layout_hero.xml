@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin_nano"
+    android:background="@color/cardViewColor"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:paddingEnd="@dimen/default_horizontal_padding"
+    android:paddingStart="@dimen/default_horizontal_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardViewColor">
+
+        <ImageView
+            android:id="@+id/hero_image"
+            android:layout_width="@dimen/hero_listitem_profile_image"
+            android:layout_height="@dimen/hero_listitem_profile_image"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/default_margin"
+            android:transitionName="@string/image_animation_name"
+            tools:src="@drawable/ironman_cry" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/hero_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/superhero_name"
+                style="@style/SuperheroNameStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/defaul_margin_mini"
+                android:transitionName="@string/superhero_animation_name"
+                tools:text="Ironman" />
+
+            <TextView
+                android:id="@+id/real_name"
+                style="@style/RealNameStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/defaul_margin_mini"
+                android:transitionName="@string/realname_animation_name"
+                tools:text="Tony Stark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separtor_line_height"
+                android:layout_gravity="end"
+                android:background="@color/accent" />
+
+
+            <TextView
+                android:id="@+id/hero_groups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin_nano"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:text="The Avengers, Initiative, Hellfire Club (outer circle), S.H.I.E.L.D., Illuminati, Thunderbolts, Force Works, Queen's Vengeance, Alcoholics Anonymous" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
